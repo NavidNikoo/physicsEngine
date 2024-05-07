@@ -34,7 +34,7 @@ y( xy[ 1 ] ) {
 
 inline Vec2& Vec2::operator=( const Vec2 &rhs ) {
     x = rhs.x;
-    y = rhs.x;
+    y = rhs.y;
     return *this;
 }
 
@@ -81,12 +81,13 @@ inline Vec2 Vec2::operator-( const Vec2 &rhs ) const {
     return temp;
 }
 
-inline Vec2 Vec2::operator *( const float rhs ) const {
+inline Vec2 Vec2::operator*( const float rhs ) const {
     Vec2 temp;
     temp.x = x * rhs;
     temp.y = y * rhs;
     return temp;
 }
+
 
 inline const Vec2& Vec2::operator *=( const float rhs ) {
     x *= rhs;
