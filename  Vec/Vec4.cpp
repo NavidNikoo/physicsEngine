@@ -32,7 +32,7 @@ inline Vec4::Vec4( const float* rhs )
 
 }
 
-inline Vec4& Vec4::operator=( const Vec4& &rhs ) {
+inline Vec4& Vec4::operator=( const Vec4& rhs ) {
     x = rhs.x;
     y = rhs.y;
     z = rhs.z;
@@ -104,7 +104,7 @@ inline const Vec4& Vec4::operator/=( const Vec4& rhs ) {
 }
 
 inline const Vec4& Vec4::operator-( const Vec4& rhs ) const {
-    Vec4 temp;
+    Vec4 temp; //temporary
     temp.x = x - rhs.x;
     temp.y = y - rhs.y;
     temp.z = z - rhs.z;
