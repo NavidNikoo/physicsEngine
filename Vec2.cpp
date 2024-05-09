@@ -72,7 +72,7 @@ inline const Vec2& Vec2::operator-= ( const Vec2 &rhs ) {
     x -= rhs.x;
     y -= rhs.y ;
     return *this;
-}
+}SBB
 
 inline Vec2 Vec2::operator-( const Vec2 &rhs ) const {
     Vec2 temp;
